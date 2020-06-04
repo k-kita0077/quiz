@@ -10,6 +10,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstQuestionViewController" customModule="quiz" customModuleProvider="target">
             <connections>
                 <outlet property="firstResultImageView" destination="ELP-7M-3wk" id="eaF-O4-Mpr"/>
+                <outlet property="getPointLabel" destination="od7-ub-mov" id="xQ6-qL-l6Q"/>
+                <outlet property="timeLimitLabel" destination="VW9-em-ISy" id="bJ9-Yy-PbQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -29,7 +31,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhM-JP-aFD">
-                    <rect key="frame" x="182" y="169" width="50" height="30"/>
+                    <rect key="frame" x="182" y="239" width="50" height="30"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="1ZB-XW-fR1"/>
@@ -41,7 +43,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAX-Qw-s2v">
-                    <rect key="frame" x="182" y="369" width="50" height="30"/>
+                    <rect key="frame" x="182" y="439" width="50" height="30"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="Cfu-tP-eDm"/>
@@ -53,14 +55,14 @@
                     </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ELP-7M-3wk">
-                    <rect key="frame" x="87" y="672" width="240" height="120"/>
+                    <rect key="frame" x="87" y="702" width="240" height="120"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="240" id="Zij-xX-NrN"/>
                         <constraint firstAttribute="height" constant="120" id="wcR-dw-7uT"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0g-c2-vKc">
-                    <rect key="frame" x="182" y="269" width="50" height="30"/>
+                    <rect key="frame" x="182" y="339" width="50" height="30"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="7cs-h3-Zbf"/>
@@ -71,19 +73,43 @@
                         <action selector="tappedSecondChoiceButton:" destination="-1" eventType="touchUpInside" id="qZi-Pq-Ixf"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VW9-em-ISy">
+                    <rect key="frame" x="182" y="149" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="TLp-f0-lG9"/>
+                        <constraint firstAttribute="width" constant="50" id="erc-eo-4Tx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="od7-ub-mov">
+                    <rect key="frame" x="57" y="622" width="300" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Gme-NN-h2H"/>
+                        <constraint firstAttribute="width" constant="300" id="Py4-Xy-1oV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="c0g-c2-vKc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7dE-9E-z80"/>
                 <constraint firstItem="nmu-Bg-mZq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="846-7Z-tbf"/>
+                <constraint firstItem="VW9-em-ISy" firstAttribute="top" secondItem="nmu-Bg-mZq" secondAttribute="bottom" constant="30" id="87V-Gd-bTr"/>
+                <constraint firstItem="VW9-em-ISy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AiP-bX-q5l"/>
+                <constraint firstItem="ELP-7M-3wk" firstAttribute="top" secondItem="od7-ub-mov" secondAttribute="bottom" constant="30" id="ORD-CG-L93"/>
                 <constraint firstItem="zAX-Qw-s2v" firstAttribute="top" secondItem="c0g-c2-vKc" secondAttribute="bottom" constant="70" id="OrV-uW-mdj"/>
                 <constraint firstItem="c0g-c2-vKc" firstAttribute="top" secondItem="VhM-JP-aFD" secondAttribute="bottom" constant="70" id="VNv-MM-qfC"/>
                 <constraint firstItem="VhM-JP-aFD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Y22-lI-0SA"/>
-                <constraint firstItem="VhM-JP-aFD" firstAttribute="top" secondItem="nmu-Bg-mZq" secondAttribute="bottom" constant="50" id="ZM2-ht-gcy"/>
                 <constraint firstItem="nmu-Bg-mZq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Zas-TC-3Kx"/>
                 <constraint firstItem="zAX-Qw-s2v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dH2-Cr-hlp"/>
                 <constraint firstItem="ELP-7M-3wk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iLr-iQ-bud"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ELP-7M-3wk" secondAttribute="bottom" constant="70" id="sES-kC-OYL"/>
+                <constraint firstItem="od7-ub-mov" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="r6Q-bk-aVN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ELP-7M-3wk" secondAttribute="bottom" constant="40" id="sES-kC-OYL"/>
+                <constraint firstItem="VhM-JP-aFD" firstAttribute="top" secondItem="VW9-em-ISy" secondAttribute="bottom" constant="40" id="sI0-TQ-1bp"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="141.96428571428569"/>

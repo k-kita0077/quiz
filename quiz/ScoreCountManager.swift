@@ -25,9 +25,9 @@ class ScoreCountManager{
         
     }
     
-    func addScore() {
+    func addScore(double: Int) {
         if let point = self.delegate?.getPoint(){
-            self.totalScore += point
+            self.totalScore += point * double
         }
     }
 }

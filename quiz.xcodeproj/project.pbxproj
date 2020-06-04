@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790D911124890C3500C82EB4 /* truesound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 790D911024890C3400C82EB4 /* truesound.mp3 */; };
+		790D911324890C5D00C82EB4 /* falsesound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 790D911224890C5D00C82EB4 /* falsesound.mp3 */; };
 		79E36DF02481FA7700849E80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E36DEF2481FA7700849E80 /* AppDelegate.swift */; };
 		79E36DF22481FA7700849E80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E36DF12481FA7700849E80 /* SceneDelegate.swift */; };
 		79E36DF42481FA7700849E80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E36DF32481FA7700849E80 /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		790D911024890C3400C82EB4 /* truesound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = truesound.mp3; sourceTree = "<group>"; };
+		790D911224890C5D00C82EB4 /* falsesound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = falsesound.mp3; sourceTree = "<group>"; };
 		79E36DEC2481FA7700849E80 /* quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E36DEF2481FA7700849E80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79E36DF12481FA7700849E80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 				79E36E152482058800849E80 /* ScoreCountManager.swift */,
 				79E36DF82481FA7A00849E80 /* Assets.xcassets */,
 				79E36DFA2481FA7A00849E80 /* LaunchScreen.storyboard */,
+				790D911024890C3400C82EB4 /* truesound.mp3 */,
+				790D911224890C5D00C82EB4 /* falsesound.mp3 */,
 				79E36DFD2481FA7A00849E80 /* Info.plist */,
 			);
 			path = quiz;
@@ -156,9 +162,11 @@
 				79E36DF92481FA7A00849E80 /* Assets.xcassets in Resources */,
 				79E36E0E2481FF4200849E80 /* TfirdQuestionViewController.xib in Resources */,
 				79E36DF72481FA7700849E80 /* Main.storyboard in Resources */,
+				790D911124890C3500C82EB4 /* truesound.mp3 in Resources */,
 				79E36E122482007100849E80 /* ScoreViewController.xib in Resources */,
 				79E36E0A2481FDFA00849E80 /* SecondQuestionViewController.xib in Resources */,
 				79E36E062481FBC800849E80 /* FirstQuestionViewController.xib in Resources */,
+				790D911324890C5D00C82EB4 /* falsesound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
